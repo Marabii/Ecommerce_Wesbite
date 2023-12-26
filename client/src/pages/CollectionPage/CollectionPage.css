@@ -1,0 +1,92 @@
+.collection-page-main {
+    margin-top: 150px;
+    display: flex;
+}
+
+.collection-page-sidebar {
+    padding : 20px;
+    width : 300px;
+    position: sticky;
+    top : 80px;
+    height : fit-content;
+}
+
+.collection-page-sidebar h3 {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.collection-page-products {
+    display: flex;
+    gap : 20px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.collection-page-products {
+    justify-content: center;
+    padding-right: 50px;
+}
+
+.color-filter {
+    margin-bottom: 20px;
+}
+
+.size-filter > div {
+    display: grid;
+}
+
+.size-filter > div button {
+    display: inline-block;
+    padding: 5px 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #393123;
+    color: #4d3805;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    margin-bottom: 15px;
+}
+
+.size-filter > div button:hover {
+    background-color: #424343;
+    color: #fff;
+}
+
+.size-filter > div button:active {
+    border-color: #2980b9;
+}
+
+
+.collection-page-sidebar-filters h4 {
+    font-weight: 100;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.color-filter > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap : 20px;
+}
+
+@media (max-width : 700px) {
+    .collection-page-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .collection-page-sidebar {
+        position: static;
+    }
+
+    .collection-page-products {
+        padding: 0;
+    }
+}

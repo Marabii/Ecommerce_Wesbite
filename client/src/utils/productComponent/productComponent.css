@@ -1,0 +1,49 @@
+.product-component {
+    aspect-ratio: 433 / 477;
+    color : var(--text-color);
+    width : min(100vw, 430px);
+    cursor: pointer;
+    padding: 0 15px;
+}
+
+.img-container-product {
+    aspect-ratio: 1 / 1;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.img-container-product img {
+    aspect-ratio: 1 / 1;
+    width : min(100%, 430px)
+}
+
+.img-container-product div {
+    position: absolute;
+    top : 10px;
+    left : 10px;
+    background-color: white;
+    padding : 5px;
+    font-size: 0.8rem;
+}
+
+.product-data p {
+    font-weight : 400;
+    margin-bottom: 5px;
+}
+
+.product-data div {
+    display: flex;
+}
+
+.product-data div p {
+    margin-right: 15px;
+}
+
+.current-price {
+    color : var(--price-color)
+}
+
+.old-price {
+    text-decoration: line-through;
+    color : var(--text-color)
+}

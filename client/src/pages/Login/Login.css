@@ -1,0 +1,51 @@
+.login-container {
+    display: grid;
+}
+
+.login-container form {
+    width : min(400px, 100%);
+    aspect-ratio: 360 / 445;
+    justify-self: center;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding : 15px;
+}
+
+.login-container form h2 {
+    font-weight: 100;
+    font-size: 2rem;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+.login-container form span {
+    font-weight: 100;
+    color : var(--text-color);
+    margin-bottom: 30px;
+}
+
+.login-container form input {
+    width : 100%;
+    height : 50px;
+    text-indent: 15px;
+    outline: none;
+    border : 1px solid var(--text-color);
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+    color : var(--text-color);
+}
+
+.login-container form input:focus {
+    border : 2px solid black;
+}
+ 
+.login-container form button {
+    margin-top: 0px;
+    width : 100%;
+    box-shadow: none;
+    border-radius: 0;
+    margin-bottom: 15px;
+}
+

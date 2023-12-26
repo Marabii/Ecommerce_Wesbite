@@ -1,0 +1,132 @@
+.product-page-content {
+    display: flex;
+    margin-top: 100px;
+    padding : 20px;
+    justify-content: center;
+    gap : 20px;
+}
+
+.product-page-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap : 15px;
+    height : fit-content;
+    position: sticky;
+    top : 100px;
+}
+
+.product-page-sidebar img {
+    aspect-ratio: 1 / 1;
+    width : 68px;
+    cursor: pointer;
+}
+
+.product-page-showroom > div {
+    scroll-margin: 30px;
+}
+
+.product-page-showroom {
+    width : min(100%, 780px);
+}
+
+.product-page-showroom img {
+    aspect-ratio: 1 / 1;
+    width : min(100%, 780px)
+}
+
+.product-page-description {
+    width : min(500px, 100%);
+    height : fit-content;
+    position: sticky;
+    top : 100px;
+}
+
+.product-page-description h2 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.product-page-description > div {
+    margin-top: 30px;
+    display: flex;
+    font-size: 1.5rem;
+    gap : 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.product-page-description > div div:first-child {
+    color : var(--price-color);
+    font-size: 1.6rem;
+    font-weight: 100;
+}
+
+.product-page-description > div div:last-child {
+    text-decoration: line-through;
+    color : var(--text-color);
+    font-weight: 100;
+}
+
+.product-page-description hr {
+    margin-bottom: 15px;
+}
+
+.product-page-description p {
+    font-size: 1rem;
+    line-height: 2rem;
+    color : var(--text-color);
+    margin-bottom: 20px;
+}
+
+.fit-guide-container {
+    background-color: black;
+    opacity: 0.8;
+    height : 100%;
+    place-items: center;
+}
+
+#close-fit-guide {
+    position: absolute;
+    top : 20px;
+    right : 20px;
+    cursor: pointer;
+}
+
+.fit-guide-container img {
+    width : 100%;
+}
+
+.fit-guide-btn {
+    all : unset;
+    background-color: transparent;
+    font-size: 1.3rem;
+    color : var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+    cursor: pointer;
+}
+
+.add-to-cart-btn {
+    margin-top: 40px;
+    width: 100%;
+    color : var(--text-color);
+    font-weight: 800;
+}
+
+@media (max-width : 800px) {
+    .product-page-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-page-sidebar {
+        display: none;
+    }
+}
+
+@media (max-width : 400px) {
+    #close-fit-guide {
+        top : 10px !important;
+        right : 10px !important
+    }
+}

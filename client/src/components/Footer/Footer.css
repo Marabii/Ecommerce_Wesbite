@@ -1,0 +1,48 @@
+footer {
+    margin-top: 50px;
+    display: flex;
+    color : var(--text-color);
+    flex-wrap: wrap;
+    width : 100%;
+    padding : 10px 40px;
+    justify-content: space-between;
+    border-top: 1px solid #ddd;
+    padding-top: 40px;
+}
+
+footer ul {
+    list-style: none;
+    line-height: 1.7rem;
+}
+
+footer ul li {
+    max-width: 40ch;
+}
+
+footer ul li:first-child {
+    color : black;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.footer-social-media {
+    margin-top: 15px;
+}
+
+.footer-social-media ul {
+    list-style: none;
+    display: flex;
+    gap : 15px;
+}
+
+footer ul li input {
+    height : 40px;
+    text-indent: 15px;
+    width : 100%;
+    margin : 15px 0;
+}
+footer ul li button {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    width : 50%;
+}

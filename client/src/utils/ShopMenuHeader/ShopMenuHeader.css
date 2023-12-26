@@ -1,0 +1,82 @@
+.shop-menu-header {
+    color : white;
+    background-color: var(--light-grey);
+    width: min(100%, 400px);
+    position : fixed;
+    top : 0px;
+    z-index: 20;
+    height : 100vh;
+    padding : 30px;
+    overflow-y: scroll;
+}
+
+.shop-menu-header ul li {
+    cursor : pointer;
+    width : fit-content;
+}
+
+.shop-menu-header ul li:hover {
+    color : white;
+    border-bottom: 1px;
+}
+
+.shop-menu-header::-webkit-scrollbar {
+    width : 10px;
+}
+
+.shop-menu-header::-webkit-scrollbar-thumb {
+    background-color: rgb(54, 52, 52);
+    opacity: 0.7;
+    border-radius: 5px;
+}
+
+.shop-menu-header ul {
+    list-style: none;
+}
+
+.shop-menu-x {
+    position: absolute;
+    top : 15px;
+    left : 15px;
+    cursor: pointer;
+}
+
+.shop-menu-social-media {
+    position: fixed;
+    width: min(380px, 90%);
+    bottom: 0;
+    left : 5px;
+    padding : 20px;
+    background-color: var(--light-grey);
+    border-top: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.shop-menu-social-media ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop-menu-store-items:first-of-type {
+    margin-top: 50px;
+}
+
+.shop-menu-store-items {
+    margin-bottom: 20px;
+    line-height: 2rem;
+    color : #ffffffb3;
+    font-size: 0.9rem;
+}
+
+.shop-menu-store-items > div {
+    margin-bottom: 15px;
+}
+
+.shop-menu-store-items > ul {
+    margin-left: 20px;
+}
+
+.shop-menu-store-items hr {
+    opacity: 0.4;
+    margin-top: 10px;
+}

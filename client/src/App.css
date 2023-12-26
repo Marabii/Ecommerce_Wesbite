@@ -1,0 +1,83 @@
+* {
+  margin : 0;
+  padding : 0;
+  box-sizing: border-box;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-family: 'Ibarra Real Nova', serif;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Karla', sans-serif;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+:root {
+  --light-grey : #1c1b1b;
+  --button-color : #363636;
+  --text-color : #6a6a6a;
+  --price-color : #a27673;
+  --bubble-color : #ffcc00;
+  --hover-color : #ff9900;
+}
+
+.shop-button {
+  margin-top: 20px;
+  color: var(--button-color);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 2px 1px 6px -1px #000000;
+  text-transform: uppercase;
+  overflow: hidden; 
+  position: relative;
+  transition: all 0.3s ease; 
+  padding : 14px min(3vw, 34px);
+  font-size: clamp(0.8rem, 1vw + 0.3rem, 3rem);
+}
+
+.shop-button:hover {
+  background-color: var(--hover-color); /* Change the background color on hover */
+  color: #ffffff; /* Text color turns white on hover */
+  scale: 1.05;
+}
+
+.shop-button:hover::before {
+  content: '';
+  position: absolute;
+  background-color: var(--bubble-color); /* Bubble color */
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  animation: bubble 1s ease infinite; /* Apply the bubble animation */
+}
+
+.shop-button:hover::after {
+  content: '';
+  position: absolute;
+  background-color: var(--bubble-color); /* Another bubble color */
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  animation: bubble 1s ease infinite 0.5s; /* Apply the bubble animation with a slight delay */
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-30px) scale(0.8);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-60px) scale(0.5);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,132 @@
+
+header {
+    color : white;
+    position : relative;
+    font-weight: 200;
+}
+
+.top-header {
+    background-color: black;
+    padding : 15px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.ecommerce-site-name {
+    width : 20ch;
+    position: absolute;
+    left : 25px;
+    line-height: 0.9rem;
+    letter-spacing: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    padding : 10px;
+    opacity: 0.8;
+}
+
+.top-header h3 {
+    margin: 0 auto;
+    letter-spacing: 0.2rem;
+    font-size: 0.9rem;
+}
+
+.bottom-header > div:first-child {
+    padding : 15px 30px;
+    color : #b59c9c;
+    display: flex;
+    width : 100%;
+    position: absolute;
+    background-color: transparent;
+    z-index: 20;
+}
+
+.bottom-header > div ul {
+    margin: 0;
+    display: flex;
+    list-style: none;
+}
+
+.bottom-header > div img {
+    margin: 0 auto;
+}
+
+.bottom-header > div ul li {
+    font-size: 0.9rem;
+    letter-spacing: 0.2rem;
+}
+
+.bottom-header > div > ul:first-child, .bottom-header > ul:last-child {
+    position: absolute;
+}
+
+.bottom-header > div > ul:first-child {
+    left : 50px;
+}
+
+.bottom-header > div > ul:last-child {
+    position: absolute;
+    right: 50px;
+}
+
+.bottom-header > div > ul:last-child li {
+    margin-left: 25px;
+}
+
+.bottom-header > div > ul li {
+    cursor: pointer;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+    color : black;
+}
+
+.fixed-header > div:first-child {
+    background-color: white;
+}
+
+.fixed-header > div:last-child {
+    top : 58px;
+}
+
+.collection-page-sort {
+    top : 103px;
+    background-color: white;
+    width : 100%;
+    z-index: 100;
+    position: absolute;
+    display: none !important;
+}
+
+.cart-number-of-products {
+    font-size: 0.5rem;
+    position: absolute;
+    background-color: rgb(53, 20, 6);
+    display: grid;
+    place-items: center;
+    padding: 5px;
+    width : 15px;
+    color : white;
+    border-radius: 50%;
+    top : -6px;
+    right : -5px;
+
+}
+
+@media (max-width : 900px) {
+    .top-header {
+        flex-direction: column;
+    }
+    .ecommerce-site-name {
+        position: static;
+        width: fit-content;
+        margin-bottom: 15px;
+    }
+}
+

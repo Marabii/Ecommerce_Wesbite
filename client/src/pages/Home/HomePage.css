@@ -1,0 +1,114 @@
+.home-page-image-container img {
+    aspect-ratio: 1400 / 933;
+    width : 100%;
+}
+
+.home-page-flash-sales {
+    width : 100%;
+    background-color: black;
+    height : 120px;
+    color : white;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.3rem;
+    padding : 100px 0px;
+    text-align: center;
+}
+
+.home-page-flash-sales h2 {
+    margin-bottom: 10px;
+    font-size: clamp(1rem, 4.5vw + 0.30rem, 3rem);
+}
+
+.home-page-flash-sales h4 {
+    font-size: clamp(1rem, 0.5vw + 0.30rem, 3rem);
+}
+
+.home-page-image-container {
+    position: relative;
+}
+
+.home-page-image-container > div {
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color : white;
+}
+
+.home-page-image-container h2 {
+    font-size: clamp(1rem, 6.5vw + 0.30rem, 3rem);
+    font-weight: 100;
+    text-align: center;
+    max-width: 15ch;
+}
+
+.home-page-deals {
+    max-width: 1400px;
+    margin: 50px auto;
+    position: relative;
+}
+
+
+.home-page-deals > button {
+    position: absolute !important;
+    width: fit-content;
+    padding : 15px;
+    left : 50%;
+    transform: translate(-50%);
+    color : white;
+    background-color: black;
+    margin-top: 50px;
+}
+
+.home-page-shop-tour {
+    display: flex;
+    flex-wrap: wrap;
+    gap : 15px;
+    width : 100%;
+    margin-top: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-page-shop-tour > div {
+    position : relative;
+}
+
+.home-page-shop-tour > div > div {
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    place-items: center;
+}
+
+.home-page-shop-tour > div > div h3 {
+    color : white;
+    font-weight: 100;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-shadow: black 1px 0 10px;
+}
+
+.react-multi-carousel-track li {
+    display: flex;
+    justify-content: center;
+}
+
+.home-page-shop-tour-image-div {
+    aspect-ratio: 700 / 605;
+    width: min(100%, 700px);
+}
+
+.home-page-shop-tour-image-div img {
+    width : 100%;
+}
